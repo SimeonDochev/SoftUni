@@ -3,14 +3,12 @@ n = int(input())
 even_numbers_set = set()
 odd_numbers_set = set()
 
-line_counter = 1
-for _ in range(n):
+for i in range(1, n+1):
     name = input()
     current_sum = 0
     for char in name:
         current_sum += ord(char)
-    current_sum //= line_counter
-    line_counter += 1
+    current_sum //= i
     if current_sum % 2 == 0:
         even_numbers_set.add(current_sum)
     else:
