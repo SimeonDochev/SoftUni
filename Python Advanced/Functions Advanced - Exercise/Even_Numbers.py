@@ -1,6 +1,6 @@
 def even_numbers(numbers):
-    return [int(el) for el in numbers if int(el) % 2 == 0]
+    return list(filter(lambda x: x % 2 == 0, numbers))
 
 
-nums = input().split()
+nums = [int(el) for el in input().split()]
 print(even_numbers(nums))
