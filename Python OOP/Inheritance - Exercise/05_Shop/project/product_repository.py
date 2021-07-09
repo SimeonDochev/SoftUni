@@ -19,11 +19,5 @@ class ProductRepository:
                 self.products.remove(prod)
 
     def __repr__(self):
-        result = ""
-
-        for idx in range(len(self.products)):
-            if not idx == len(self.products) - 1:
-                result += f"{self.products[idx].name}: {self.products[idx].quantity}\n"
-            else:
-                result += f"{self.products[idx].name}: {self.products[idx].quantity}"
-        return result
+        result = [f"{product.name}: {product.quantity}" for product in self.products]
+        return '\n'.join(result)
