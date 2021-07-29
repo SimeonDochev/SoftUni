@@ -2,6 +2,7 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Python OOP/Example Exams/Python OOP Exam - 16 Aug 2020" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Python OOP/Inheritance - Lab/Food" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
