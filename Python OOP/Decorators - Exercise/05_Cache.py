@@ -1,13 +1,14 @@
 def cache(function):
+    log = {}
+
     def wrapper(n):
-        result = function(n)
+        if n in log:
+            return log[n]
+        else:
+            log[n] = function(n)
+            return log[n]
 
-        if n not in wrapper.log:
-            wrapper.log[n] = result
-
-        return wrapper.log[n]
-
-    wrapper.log = {}
+    wrapper.log = log
     return wrapper
 
 
