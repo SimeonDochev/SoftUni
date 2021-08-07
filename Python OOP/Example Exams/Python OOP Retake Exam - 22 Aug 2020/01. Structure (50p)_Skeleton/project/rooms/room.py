@@ -6,6 +6,7 @@ class Room:
         self.budget = budget
         self.members_count = members_count
         self.children = []
+        self.expenses = 0
 
     @property
     def expenses(self):
